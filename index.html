@@ -25,14 +25,14 @@
     <script type="text/javascript">
       document.addEventListener('DOMContentLoaded', function() {
         // see how what the example spreadsheet looks like:
-        // https://docs.google.com/spreadsheet/lv?key=0Ao5u1U6KYND7dGN5QngweVJUWE16bTRob0d2a3dCbnc
-        var URL = "0Ao5u1U6KYND7dGN5QngweVJUWE16bTRob0d2a3dCbnc"
+        // https://docs.google.com/spreadsheets/d/1z0mIo8IvLGjztPXzTkZ35A2o3lZgsg7f-P59rRPG2Yk
+        var URL = "1z0mIo8IvLGjztPXzTkZ35A2o3lZgsg7f-P59rRPG2Yk"
         Tabletop.init( { key: URL, callback: showInfo, simpleSheet: true } )
       })
 
       function showInfo(data) {
         // the column headers of the info you want in your popup
-        var optionsJSON = ["placename", "photo-url"]
+        var optionsJSON = ["Name", "Profile Address"]
         // an html template for your popup
         var template = "<ul><li><a href='{{photo-url}}' target='_blank'>"
                      + "<img src='{{photo-url}}'></a></li>"
